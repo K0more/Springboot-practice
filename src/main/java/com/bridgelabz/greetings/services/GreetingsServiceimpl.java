@@ -5,14 +5,14 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bridgelabz.greetings.dao.GreetingsDao;
 import com.bridgelabz.greetings.entity.Greetings;
+import com.bridgelabz.greetings.repository.GreetingsRepository;
 
 @Service
-public class GreetingsServiceimpl implements GreetingsService {
+public class GreetingsServiceimpl implements IGreetingsService {
 
 @Autowired
-private GreetingsDao greetingsDao;
+private GreetingsRepository greetingsDao;
 	
 	/*
 	 * List<Course> list;

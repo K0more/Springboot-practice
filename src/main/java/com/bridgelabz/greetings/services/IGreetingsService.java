@@ -5,7 +5,7 @@ import java.util.List;
 import com.bridgelabz.greetings.entity.Greetings;
 
 
-public interface GreetingsService {
+public interface IGreetingsService {
 	
 public List<Greetings> getGreetings();
 	

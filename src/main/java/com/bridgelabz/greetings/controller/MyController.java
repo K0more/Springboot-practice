@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bridgelabz.greetings.entity.Greetings;
-import com.bridgelabz.greetings.services.GreetingsService;
+import com.bridgelabz.greetings.services.IGreetingsService;
 
 
 @RestController
 public class MyController {
 
 	@Autowired
-	private GreetingsService greetingsService;
+	private IGreetingsService greetingsService;
 
 	@GetMapping("/home")
 	public String home() {
